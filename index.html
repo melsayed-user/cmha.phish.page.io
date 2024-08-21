@@ -12,20 +12,46 @@
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
         }
         .container {
             width: 80%;
-            margin: auto;
+            max-width: 800px;
             padding: 20px;
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
-        }
-        h1 {
-            font-size: 2em;
-            color: #d9534f;
             margin-bottom: 20px;
+            position: relative;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -60px;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 1.5em;
+            margin: 0;
+            color: #333;
         }
         p {
             margin-bottom: 20px;
@@ -44,11 +70,21 @@
         .contact {
             font-weight: bold;
         }
+        .footer-image {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>That was a risky click!</h1>
+        <div class="header">
+            <img src="https://github.com/melsayed-user/melsayed.github.io/raw/4060a25564d5359cac7b518accff39d343502b80/unnamed.jpg" alt="CMHA Halton Logo">
+            <h1>CMHA Halton</h1>
+        </div>
+        <h2>That was a risky click!</h2>
         <p>Oops, you’ve clicked a link in a phishing test email. This was a simulated phishing attempt designed to help you recognize potential phishing attacks and to respond to them properly.</p>
         <p>Ideally, you would have reported the email to us instead of clicking the link, but we can take this as an opportunity to educate further on how to protect ourselves from phishing.</p>
 
@@ -64,6 +100,8 @@
         <p class="contact">If you have suspicions over the legitimacy of an email or its contents, please contact the IT Helpdesk through Teams, at extension 5700, or send an email to <a href="mailto:helpdesk@cmhahrb.ca">helpdesk@cmhahrb.ca</a>.</p>
 
         <p>Thank you for your continued support!</p>
+
+        <img src="https://github.com/melsayed-user/melsayed.github.io/raw/4060a25564d5359cac7b518accff39d343502b80/media.png" alt="Footer Image" class="footer-image">
     </div>
 </body>
 </html>

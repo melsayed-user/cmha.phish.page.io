@@ -12,11 +12,9 @@
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             text-align: center;
+            position: relative;
+            min-height: 100vh;
         }
         .container {
             width: 80%;
@@ -25,22 +23,21 @@
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
+            margin-top: 60px; /* Add margin to avoid overlapping with header */
             margin-bottom: 20px;
             position: relative;
+            text-align: center;
         }
         .header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
             position: absolute;
-            top: -60px;
+            top: 0;
             left: 0;
-            right: 0;
             padding: 10px;
             background: #fff;
             border-bottom: 1px solid #ddd;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
         }
         .header img {
             width: 60px;
@@ -79,11 +76,11 @@
     </style>
 </head>
 <body>
+    <div class="header">
+        <img src="https://github.com/melsayed-user/melsayed.github.io/raw/4060a25564d5359cac7b518accff39d343502b80/unnamed.jpg" alt="CMHA Halton Logo">
+        <h1>CMHA Halton</h1>
+    </div>
     <div class="container">
-        <div class="header">
-            <img src="https://github.com/melsayed-user/melsayed.github.io/raw/4060a25564d5359cac7b518accff39d343502b80/unnamed.jpg" alt="CMHA Halton Logo">
-            <h1>CMHA Halton</h1>
-        </div>
         <h2>That was a risky click!</h2>
         <p>Oops, you’ve clicked a link in a phishing test email. This was a simulated phishing attempt designed to help you recognize potential phishing attacks and to respond to them properly.</p>
         <p>Ideally, you would have reported the email to us instead of clicking the link, but we can take this as an opportunity to educate further on how to protect ourselves from phishing.</p>
